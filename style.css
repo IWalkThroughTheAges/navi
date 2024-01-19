@@ -1,0 +1,197 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+ 
+}
+.nav{
+    width:90%;
+    height:8vh;
+    background: #0099FF;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 8px );
+    -webkit-backdrop-filter: blur( 8px );
+    border-radius: 30px;
+    margin: 1vh 5vw 0px 5vw;
+    box-sizing: border-box;
+    display: flex;
+}
+.brand{
+    width:20%;
+    height:7.9vh;
+  
+ 
+}
+.brand img{
+    width:100%;
+    height:7.9vh;
+}
+.containerP{
+    width:80%;
+    height:7.9vh;
+ 
+    display: flex;
+   align-items: center;
+}
+.pages{
+    display: flex;
+    width:60%;  
+    height:auto;
+   text-align: center;
+   gap: 10px;
+   justify-content: space-between;
+   
+}
+.pages a{
+    font-size: .8rem;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+  
+    color: white;
+    transition: border 5s ease-out;
+    padding: 2px;
+   
+    
+}
+.pages a:hover{
+   border-inline: solid white 1px ;
+   border-radius: 5px;
+   
+}
+
+.logout{
+    width:10%;
+    height: 7.9vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15%;
+    
+}
+.logout a{
+    font-size: medium;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+ 
+
+.logout img{
+    width:25%;
+    height: 5vh;
+}
+/* common mobile phone */
+@media screen and (max-width: 360px) {
+    .nav{
+        width:100%;
+        height:8vh;
+        margin: 0;
+        border-radius: 0;
+    }
+    .pages{
+     
+       gap: 2px;
+       
+       
+    }
+    .pages a{
+        font-size:1vh;  
+       
+        
+    }
+    .logout{
+        width:70%;
+        height: 7.9vh;
+     
+        
+    }
+    .logout a{
+        font-size: xx-small;
+        
+    }
+     
+    
+    .logout img{
+        margin-left: 2vw;
+        width: 20%;
+        height: 5vh;
+    }
+    
+     
+    .brand img{
+        width:70%;
+        height:7.9vh;
+        margin-left: 10%;
+    }
+    .brand{
+        width:25%;
+        height:7.9vh;
+     
+    }
+  }
+  /* mobile phone large width */
+  @media only screen and (min-width: 361px) and (max-width: 767px) {
+    .nav{
+        width:100%;
+        height:8vh;
+        margin: 0;
+        border-radius: 0;
+    }
+    .pages{
+     
+       gap: 2px;
+       padding-top: 1%;
+       padding-left: 1%;    
+       
+    }
+    .pages a{
+        font-size:1vh;  
+       
+        
+    }
+    .logout{
+        width:70%;
+        height: 7.9vh;
+     
+        
+    }
+    .logout a{
+        font-size: 1.2vh;
+        
+    }
+     
+    
+    .logout img{
+        margin-left: 2vw;
+        width: 20%;
+        height: 5vh;
+    }
+    
+     
+    .brand img{
+        width:70%;
+        height:7.9vh;
+        margin-left: 10%;
+    }
+    .brand{
+        width:25%;
+        height:7.9vh;
+     
+    }
+  }
+  /* tablets */
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .nav{
+    
+        border-radius: 50px;
+   
+       
+    }
+    .brand img{
+        width:70%;
+        height:7.9vh;
+        margin-left: 10%;
+    }
+    
+  }
+  
