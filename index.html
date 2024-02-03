@@ -3,47 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"  type="text/css" href="style.css">
     <title>Document</title>
 </head>
 <body>
+  <!-- navbar large screens -->
     <div class="nav">
         <div class="brand">
             <a href="#home"> <img src="Brand.svg" alt="logo"></a>
         </div>
             <div class="containerP">
             <div class="pages">
-            <a href="#news">COURSES/PROGRAMS</a>
+            <a href="Courses.html">COURSES/PROGRAMS</a>
             <a href="#contact">GRADES</a>
             <a href="#about">SCHEDULE</a>
             <a href="#about">PROFILE</a>
            </div>
-        
-
             <div class="logout">
                 <img src="logout-svgrepo-com.svg" alt="logout">
                 <a href="#about">logout</a>
                 <span style="font-size:30px;cursor:pointer;color: white;" onclick="openNav()">&#9776;</span>
             </div>
-        
-        
-
     </div>
     </div>
-    <!-- overlay menu mobile -->
+    <!-- overlay navbar mobile -->
     <div id="myNav" class="overlay">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <div class="overlay-content">
-    <a href="#home"> <img src="Brand.svg" alt="logo"></a>
-    <a href="#">COURSES/PROGRAMS</a>
+    <a href="#index.html"> <img src="Brand.svg" alt="logo"></a>
+    <a href="Courses.html">COURSES/PROGRAMS</a>
     <a href="#">GRADES</a>
     <a href="#">SCHEDULE</a>
     <a href="#">PROFILE</a>
     <a href="#">LOGOUT</a>
+  </div>
+</div>
+<!-- homepage contents -->
+<div class="content">
+  <div class="child">
+    <div class="cat">
+      <img src="cat.png" alt="cat">
+    </div>
+    <div class="details">
+      <h1>WELCOME!</h1>
+      <p>This student portal is for informatics baguio only if you want to enroll check out are main page<a href="https://informatics.edu.ph/">Here!</a><br><br>
+      We are located at:<br>
+      3/F Decibar Bldg., 65 Lower Bonifacio St. 2600 Baguio City, Philippines<br>
+      Contact Us:<br>
+      (074) 442 3313<br>
+      Email:<br>
+      informatics_baguio@yahoo.com
+      </p>
+    </div>
+  
 
   </div>
 </div>
-
 
 <script>
 function openNav() {

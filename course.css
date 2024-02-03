@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
     background-color: white;
- 
+    font-family: Arial, sans-serif;
 }
 .nav{
     width:90%;
@@ -124,59 +124,50 @@ body{
 .overlay img{
     width:50vw;
 }
-/* end of navbar */
-.content{
-    width:100%;
-    height:90vh;
-   
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.child{
-    width:80%;
-    height:90%;
-    background-color: none;
-    display: flex;
-   
-}
-.details{
-    width:50%;
-    height:100%;
-    font-family: Arial, sans-serif;
+/* courses */
+.container{
     color: #0099FF;
-}
-.details h1{
- font-size: 4rem;
-}
-.details p{
-    font-size: 1.2rem; 
-}
-.details a {
-    color: gray;
-}
-.cat{
-    width:50%;
-    height:100%;
+    width:100%;
+    height: 50vh;
     display: flex;
-    justify-content: center;
     align-items: center;
-   
+    flex-direction: column;
 }
-.cat img{
-    width:85%;
-    height:85%;
-    animation: floatAnimation 3s infinite ease-in-out;
+.container h1{
+    font-size: xx-large;
 }
-@keyframes floatAnimation {
-    0%, 100% {
-      transform: translateY(0);
+
+.courses{
+    width:100%;
+    height: 60vh;
+    display: flex;
+}
+.offers{
+    width:35%;
+    height: 100%;
+    border: 1px solid #0099FF;
+}
+
+.offers legend{
+    border-left: 3px solid #0099FF;
+    border-right: 3px solid #0099FF;
+    animation: blink 1s infinite alternate;
+}
+@keyframes blink {
+    0% {
+        border-color: transparent;
     }
-    50% {
-      transform: translateY(-20px); /* Adjust the vertical distance of the float */
+    100% {
+        border-color: #0099FF;
     }
-  }
-/* common mobile phone */
+}
+
+.offers ul{
+    text-align: justify;
+    color: #0099FF;
+
+}
+/* common mobile size */
 @media screen and (max-width: 360px) {
     .nav{
         width:100%;
@@ -233,112 +224,114 @@ body{
   top: 15px;
   right: 35px;
   }
-  .child{
+  /* courses */
+  .container h1{
+    font-size: 1rem;
+  }
+
+  .courses{
     flex-direction: column;
+    height: 100%;
+    align-items: center;
+  }
+  .offers{
+    width:80%;
+  }
+  .offers legend{
     text-align: center;
-  }
-  .cat{
-    width: 100%;
-    height:30%;
-  }
-  .cat img{
-    width:50%;
-    height:100%;
-  }
-  .details{
-    width: 100%;
-    height:70%;
-  }
-  .details h1{
-    font-size: 2.5rem;
-  }
-  .details p{
-    font-size: small;
-  }
+   font-size: smaller;
+   animation: none;
+}
+.offers ul{
+    padding: 1rem;
+   font-size: .7rem;
+   color: #0099FF;
+   
+}
   }
   /* mobile phone large width */
   @media only screen and (min-width: 361px) and (max-width: 767px) {
-       .nav{
-        width:100%;
-        height:8vh;
-        margin: 0;
-        border-radius: 0;
-      
-    }
-    .pages{
-     display: none;
-     
-       
-    }
-    .containerP{
-    width:60%;
-       
-        
-    }
-    
-    .logout{
-        width:70%;
-        height: 7.9vh;
-     
-        
-    }
-    .logout a{
-      display: none;
-        
-    }
-     
-    
-    .logout img{
-       display: none;
-    }
-    .logout span{
-    display: flex;
-    padding-left: 50vw;
-}
-    
-     
-    .brand img{
-        width:85%;
-        height:7.9vh;
-        margin-left: 10%;
-    }
-    .brand{
-        width:30%;
-        height:7.9vh;  
-    }
-  .overlay {overflow-y: auto;}
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-  font-size: 40px;
-  top: 15px;
-  right: 35px;
-  }
-  .child{
-    flex-direction: column;
-    text-align: center;
-  }
-  .cat{
-    width: 100%;
-    height:30%;
-  }
-  .cat img{
-    width:50%;
-    height:100%;
-  }
-  .details{
-    width: 100%;
-    height:70%;
-  }
-  .details h1{
-    font-size: 3rem;
-  }
-  .details p{
-    font-size: small;
-  }
+    .nav{
+     width:100%;
+     height:8vh;
+     margin: 0;
+     border-radius: 0;
+   
+ }
+ .pages{
+  display: none;
   
+    
+ }
+ .containerP{
+ width:60%;
+    
+     
+ }
+ 
+ .logout{
+     width:70%;
+     height: 7.9vh;
+  
+     
+ }
+ .logout a{
+   display: none;
+     
+ }
+  
+ 
+ .logout img{
+    display: none;
+ }
+ .logout span{
+ display: flex;
+ padding-left: 50vw;
+}
+ 
+  
+ .brand img{
+     width:85%;
+     height:7.9vh;
+     margin-left: 10%;
+ }
+ .brand{
+     width:30%;
+     height:7.9vh;  
+ }
+.overlay {overflow-y: auto;}
+.overlay a {font-size: 20px}
+.overlay .closebtn {
+font-size: 40px;
+top: 15px;
+right: 35px;
+}
+/* courses */
+
+.courses{
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
   }
-  /* tablets */
-  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .offers{
+    width:80%;
+  }
+  .offers legend{
+    text-align: center;
+   font-size: smaller;
+}
+.offers ul{
+    padding: 1rem;
+   font-size: .7rem;
+   color: #0099FF;
+   
+}
+.container h1{
+    font-size:larger;
+}
+}
+ /* tablets */
+ @media only screen and (min-width: 768px) and (max-width: 1024px) {
     .nav{
     
         border-radius: 50px;    
@@ -348,9 +341,30 @@ body{
         height:7.9vh;
         margin-left: 10%;
     }
-    .cat img{
-        width:100%;
-        height:60%;
-      }
+    /* courses */
+
+  .courses{
+   height: 80%;
+   align-items: center;
+   flex-direction: column;
+  
+   
+  }
+  .offers{
+  height: 60%;
+  }
+  .offers legend{
+    text-align: center;
+    font-size: 1rem;
+}
+.offers ul{
+    font-size: larger;
+    color: #0099FF;
+    text-align: left;
+    list-style-type: none;
+    padding: 0;
+  
+   
+}
   }
   
